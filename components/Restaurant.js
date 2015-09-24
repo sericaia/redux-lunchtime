@@ -1,4 +1,6 @@
 import React, { Component, PropTypes } from 'react';
+import AddRestaurant from './AddRestaurant';
+
 import mui from 'material-ui';
 var RaisedButton = mui.RaisedButton;
 var AppBar = mui.AppBar,
@@ -11,17 +13,6 @@ var ThemeManager = require('material-ui/lib/styles/theme-manager')();
 class Restaurant extends Component {
   constructor(props, context) {
     super(props, context);
-    this.state = { restaurantName: '' };
-  }
-
-  handleRestaurantValue(ev) {
-    this.setState({
-      restaurantName: ev.target.value
-    })
-  }
-
-  _handleTouchTap() {
-    alert('Tap');
   }
 
   getChildContext() {
@@ -49,18 +40,7 @@ class Restaurant extends Component {
             </div>
           )}
         </List>
-
-        <p>
-          <TextField
-            type='text'
-            hintText="Restaurant name"
-            errorText="Field required."
-            onChange={this.handleRestaurantValue.bind(this)}
-            value={this.state.restaurantName} />
-        </p>
-        <p>
-          <RaisedButton onClick={() => add(this.state.restaurantName) } label="Add restaurant" />
-        </p>
+        <AddRestaurant add={add}/>
       </div>
     );
   }
