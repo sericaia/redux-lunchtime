@@ -36,7 +36,7 @@ class Restaurant extends Component {
                   Votes: {value.votes}
                 </p>
               }
-              onClick={() => addVote(value.text)} />
+              onClick={() => addVote(value.id)} />
             </div>
           )}
         </List>

@@ -13,7 +13,7 @@ export function add(text) {
 export function remove() {
   return {
     type: REMOVE_RESTAURANT,
-    text //replace by id
+    id
   };
 }
 

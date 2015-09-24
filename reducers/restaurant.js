@@ -4,6 +4,14 @@ var initialState = [{
   id: 1,
   text: 'Oasis',
   votes: 5
+}, {
+  id: 2,
+  text: 'Ilha da Madeira',
+  votes: 10
+}, {
+  id: 3,
+  text: 'Indiano',
+  votes: 2
 }];
 
 export default function restaurant(state = initialState, action) {
