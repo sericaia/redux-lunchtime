@@ -27,10 +27,10 @@ export function remove() {
 //   };
 // }
 
-export function addVote(text) {
+export function addVote(id) {
   return {
     type: ADD_VOTE,
-    text
+    id
   };
 }
 
