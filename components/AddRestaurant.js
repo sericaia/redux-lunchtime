@@ -1,10 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import mui from 'material-ui';
 var RaisedButton = mui.RaisedButton;
-var AppBar = mui.AppBar,
-  List = mui.List,
-  ListItem = mui.ListItem,
-  TextField = mui.TextField;
+var TextField = mui.TextField;
 
 var ThemeManager = require('material-ui/lib/styles/theme-manager')();
 
@@ -17,7 +14,7 @@ class AddRestaurant extends Component {
   handleRestaurantValue(ev) {
     this.setState({
       restaurantName: ev.target.value
-    })
+    });
   }
 
   getChildContext() {

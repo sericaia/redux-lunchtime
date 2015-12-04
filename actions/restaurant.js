@@ -1,3 +1,5 @@
+'use strict';
+
 export const ADD_RESTAURANT = 'ADD_RESTAURANT';
 export const REMOVE_RESTAURANT = 'REMOVE_RESTAURANT';
 export const ADD_VOTE = 'ADD_VOTE';
@@ -10,7 +12,7 @@ export function add(text) {
   };
 }
 
-export function remove() {
+export function remove(id) {
   return {
     type: REMOVE_RESTAURANT,
     id

@@ -1,3 +1,5 @@
+'use strict';
+
 import { ADD_RESTAURANT, REMOVE_RESTAURANT, ADD_VOTE, REMOVE_VOTE } from '../actions/restaurant';
 
 var initialState = [{
@@ -24,7 +26,7 @@ export default function restaurant(state = initialState, action) {
     }, ...state];
 
   case REMOVE_RESTAURANT:
-    return state.filter(restaurant => restaurant.id != restaurant.id);
+    return state.filter(restaurant => restaurant.id !== restaurant.id);
 
   case ADD_VOTE:
     return state.map(restaurant =>

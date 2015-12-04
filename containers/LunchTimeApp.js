@@ -1,3 +1,5 @@
+'use strict';
+
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Restaurant from '../components/Restaurant';
