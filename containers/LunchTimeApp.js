@@ -7,7 +7,7 @@ import * as RestaurantActions from '../actions/restaurant';
 
 function mapStateToProps(state) {
   return {
-    restaurant: state.restaurant
+    restaurant: state.restaurant.toArray() //toJS() also works here
   };
 }
 

@@ -15,6 +15,7 @@
     "url": "https://github.com/sericaia/lunchtime/issues"
   },
   "dependencies": {
+    "immutable": "^3.7.5",
     "react": "^0.13.3",
     "react-redux": "^1.0.1",
     "redux": "^1.0.1",
